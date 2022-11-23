@@ -1,0 +1,44 @@
+body{
+    margin: 0;
+}
+.div1{
+    height: 100px;
+    width: 100px;
+    background-image: linear-gradient(yellowgreen, yellow);
+    border-radius: 50%;
+    position: absolute;
+
+    /*animation property*/
+    animation-name: harsh;
+    animation-duration: 5s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+
+}
+@keyframes harsh{
+    0%{
+        left: 0;
+        top: 0;
+        background-image: linear-gradient(green,purple);
+    }
+    25%{
+        left: 400px;
+        top: 0;
+        background-image: linear-gradient(purple, darkblue);
+    }
+    50%{
+        left: 400px;
+        top: 400px;
+        background-image: linear-gradient(purple, darkblue);
+    }
+    75%{
+        left: 0px;
+        top: 400px;
+        background-image: linear-gradient(purple, darkblue);
+    }
+    100%{
+        left: 0;
+        top: 0;
+        background-image: linear-gradient(purple, darkblue);
+    }
+}
